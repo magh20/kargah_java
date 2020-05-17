@@ -1,0 +1,190 @@
+JFDML JFormDesigner: "7.0.1.0.272" Java: "11.0.5" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+			"$layoutConstraints": "hidemode 3"
+			"$columnConstraints": "[fill][fill][fill][fill][fill][fill][fill]"
+			"$rowConstraints": "[][][][][][][][]"
+		} ) {
+			name: "this"
+			"title": "Menu"
+			"$locationPolicy": 1
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Electronic Store"
+				"horizontalAlignment": 0
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 3 1"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "productListButton"
+				"text": "Product List"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "productListMouseClicked", true ) )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 3 4"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "buyButton"
+				"text": "Buy"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "buyButtonMouseClicked", true ) )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 3 5"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "returnButton"
+				"text": "Return"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "returnButtonMouseClicked", true ) )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 3 6"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "lotteryButton"
+				"text": "Lottery"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "lotteryButtonMouseClicked", true ) )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 3 7"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 200, 250 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :::p, comp pLDLabel1:::p:90:p, space :::x, comp pLDLabel2:::p:90:p, space :::p}}"
+			"$verticalGroup": "par l {seq l {space :::p, par b {comp pLDLabel2::b::114:x, comp pLDLabel1::b::114:x}, space :::p}}"
+		} ) {
+			name: "productListDialog"
+			"title": "Product List"
+			"$locationPolicy": 1
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "pLDLabel1"
+				"text": "text"
+				"horizontalAlignment": 0
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "pLDLabel2"
+				"text": "text"
+				"horizontalAlignment": 0
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 215, 0 )
+			"size": new java.awt.Dimension( 200, 150 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space :::p, par l {comp buyButton3::l::186:x, comp buyButton2::t::186:x, comp buyButton1::l::186:x, comp buyNameField::l::186:x}, space :::p}}"
+			"$verticalGroup": "par l {seq l {space ::14:x, comp buyNameField:::p:30:p, space u:::p, comp buyButton1:::p::p, space u:::p, comp buyButton2:::p::p, space u:::p, comp buyButton3:::p::p, space :::p}}"
+		} ) {
+			name: "buyDialog"
+			"title": "Buy"
+			"$locationPolicy": 1
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "buyButton1"
+				"text": "text"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "buyButton1MouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "buyButton2"
+				"text": "text"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "buyButton2MouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "buyButton3"
+				"text": "text"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "buyButton3MouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "buyNameField"
+				"text": "Enter Full Name"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "buyNameFieldMouseClicked", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 215, 165 )
+			"size": new java.awt.Dimension( 200, 200 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :::p, comp label3::::86:x, space :::p}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp label3::::39:x, space :::p}}"
+		} ) {
+			name: "success"
+			"alwaysOnTop": true
+			"$locationPolicy": 1
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "Successful"
+				"horizontalAlignment": 0
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 430, 330 )
+			"size": new java.awt.Dimension( 100, 75 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :::p, comp unsuccessLabel::::211:x, space :::p}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp unsuccessLabel::::39:x, space :::p}}"
+		} ) {
+			name: "unsuccess"
+			"alwaysOnTop": true
+			"$locationPolicy": 1
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "unsuccessLabel"
+				"horizontalAlignment": 0
+				"text": "unsuccess"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 545, 330 )
+			"size": new java.awt.Dimension( 225, 75 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space :::p, par l {comp returnNameField::::186:x, comp returnButton3::t::186:x, comp returnButton2::l::186:x, comp returnButton1::l::186:x}, space :::p}}"
+			"$verticalGroup": "par l {seq l {space :p:14:p, comp returnNameField:::p::p, space ::12:x, comp returnButton1:::p::p, space u:::p, comp returnButton2:::p::p, space u:::p, comp returnButton3:::p::p, space :::p}}"
+		} ) {
+			name: "returnDialog"
+			"title": "Return"
+			"$locationPolicy": 1
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "returnNameField"
+				"text": "Enter Full Name"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "textField1MouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "returnButton1"
+				"text": "text"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "returnButton1MouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "returnButton2"
+				"text": "text"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "returnButton2MouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "returnButton3"
+				"text": "text"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "returnButton3MouseClicked", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 215, 380 )
+			"size": new java.awt.Dimension( 200, 200 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space :::p, par l {comp lotteryLabel::::186:x, comp label2::::186:x}, space :::p}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp label2:::p:22:p, space :::p, comp lotteryLabel::::36:x, space :::p}}"
+		} ) {
+			name: "lotteryDialog"
+			"title": "Lottery"
+			"$locationPolicy": 1
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "The Winner Is:"
+				"horizontalAlignment": 0
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lotteryLabel"
+				"text": "text"
+				"horizontalAlignment": 0
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 215, 595 )
+			"size": new java.awt.Dimension( 200, 100 )
+		} )
+	}
+}
