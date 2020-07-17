@@ -1,0 +1,175 @@
+JFDML JFormDesigner: "7.0.1.0.272" Java: "11.0.5" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.GridLayout ) {
+			"columns": 1
+			"rows": 2
+		} ) {
+			name: "main"
+			"title": "Menu"
+			"$locationPolicy": 1
+			"$sizePolicy": 1
+			"defaultCloseOperation": 3
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "newBtn"
+				"text": "Choose New Courses"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "newBtnMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "dltBtn"
+				"text": "Edit Selected Courses"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "dltBtnMouseClicked", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 200, 150 )
+		} )
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.GridLayout ) {
+			"rows": 14
+		} ) {
+			name: "newFrm"
+			"title": "Choose New Courses"
+			"$locationPolicy": 1
+			"$sizePolicy": 1
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "infoLbl"
+				"text": "Click On Couse Information To Add! (ID\\Name\\Teacher\\Capacity\\Requirements)"
+				"horizontalAlignment": 0
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lbl1"
+				"text": "text"
+				"horizontalAlignment": 0
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "lbl1MouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lbl2"
+				"text": "text"
+				"horizontalAlignment": 0
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "lbl2MouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lbl3"
+				"text": "text"
+				"horizontalAlignment": 0
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "lbl3MouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lbl4"
+				"text": "text"
+				"horizontalAlignment": 0
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "lbl4MouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lbl5"
+				"text": "text"
+				"horizontalAlignment": 0
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "lbl5MouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lbl6"
+				"text": "text"
+				"horizontalAlignment": 0
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "lbl6MouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lbl7"
+				"text": "text"
+				"horizontalAlignment": 0
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "lbl7MouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lbl8"
+				"text": "text"
+				"horizontalAlignment": 0
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "lbl8MouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lbl9"
+				"text": "text"
+				"horizontalAlignment": 0
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "lbl9MouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lbl10"
+				"text": "text"
+				"horizontalAlignment": 0
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "lbl10MouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lbl11"
+				"text": "text"
+				"horizontalAlignment": 0
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "lbl11MouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lbl12"
+				"text": "text"
+				"horizontalAlignment": 0
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "lbl12MouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "backBtn"
+				"text": "Back"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "backBtnMouseClicked", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 210, 0 )
+			"size": new java.awt.Dimension( 800, 580 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class java.awt.GridLayout ) ) {
+			name: "dialog"
+			"$locationPolicy": 1
+			"$sizePolicy": 1
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "dialogLabel"
+				"text": "Succesful"
+				"horizontalAlignment": 0
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 1020, 0 )
+			"size": new java.awt.Dimension( 150, 75 )
+		} )
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :::p, comp label2:::p:170:p, space s:::p, comp courseFld:::p:110:p, space s:::p, comp removeBtn:::p::p, space :::x, comp backBtn2:::p:181:p, space :::p}, seq {par l {comp infoLbl2:::p:798:p, comp coursesLbl::l:p:798:p}, space :0:0:x}}"
+			"$verticalGroup": "par l {seq {comp infoLbl2:::p:40:p, space :::p, comp coursesLbl:::p:300:p, space :::p, par b {comp backBtn2::b:p::p, comp label2:::::x, comp removeBtn::b:p::p, comp courseFld::b:p::p}, space :::p}}"
+		} ) {
+			name: "editFrm"
+			"$locationPolicy": 1
+			"$sizePolicy": 1
+			"title": "Course List"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "infoLbl2"
+				"text": "(ID\\Name\\Teacher\\Capacity\\Requirements)"
+				"horizontalAlignment": 0
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "coursesLbl"
+				"text": "text"
+				"horizontalAlignment": 0
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "courseFld"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "backBtn2"
+				"text": "Back"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "backBtn2MouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "removeBtn"
+				"text": "Remove"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "removeBtnMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Enter Course ID to remove:"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 210, 595 )
+			"size": new java.awt.Dimension( 800, 415 )
+		} )
+	}
+}
